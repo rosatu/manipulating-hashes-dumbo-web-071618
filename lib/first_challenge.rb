@@ -1,3 +1,4 @@
+require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -18,6 +19,7 @@ def first_challenge
      if attribute == :favorite_icecream_flavors
        value.each do |flavor|
        puts "#{flavor}"
+       binding.pry
      end
    end
  end 
